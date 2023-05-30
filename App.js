@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -20,7 +19,6 @@ export default function App() {
     Keyboard.dismiss();
     setTaskItems([...taskItems, task]);
     setTask(null);
-    console.log(task);
   };
 
   const completeTask = (index) => {
